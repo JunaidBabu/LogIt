@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="in.junaidbabu.logit.MainActivity">
+
+
+    <com.cengalabs.flatui.views.FlatEditText
+        android:id="@+id/edittext_flat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        flatui:theme="Grass"
+        flatui:fieldStyle="box"
+        flatui:cornerRadius="3dip"
+        android:layout_above="@+id/button_block"
+        android:layout_alignParentTop="true"
+        android:layout_margin="25dp" />
+
+    <com.cengalabs.flatui.views.FlatButton
+        android:id="@+id/button_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log this"
+        flatui:theme="Grass"
+        flatui:textAppearance="none"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="159dp" />
+</RelativeLayout>
