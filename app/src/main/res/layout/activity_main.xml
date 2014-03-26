@@ -13,14 +13,13 @@
     <com.cengalabs.flatui.views.FlatEditText
         android:id="@+id/logbox"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         flatui:theme="Grass"
         flatui:fieldStyle="box"
         flatui:cornerRadius="3dip"
-        android:layout_above="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_margin="25dp"
-        android:enabled="false" />
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/button" />
 
     <com.cengalabs.flatui.views.FlatButton
         android:id="@+id/button"
@@ -30,10 +29,14 @@
         android:text="Log this"
         flatui:theme="Grass"
         flatui:textAppearance="none"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="359dp"
-        android:enabled="true" />
+        android:enabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/logbox"
+        android:layout_alignStart="@+id/logbox"
+        android:layout_alignRight="@+id/logbox"
+        android:layout_alignEnd="@+id/logbox"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp" />
 
 </RelativeLayout>
 
