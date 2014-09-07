@@ -2,10 +2,10 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
@@ -17,12 +17,19 @@ android {
         }
     }
 }
+
 repositories {
     mavenCentral()
+    mavenLocal()  // For google-play-services is not on Maven Central.
 }
+
 dependencies {
-    compile 'com.android.support:support-v4:19.0.1'
-    compile 'com.android.support:appcompat-v7:+'
-    compile 'com.github.eluleci:flatui:0.1.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.google.apis:google-api-services-calendar:v3-rev87-1.19.0' exclude module: 'httpclient'
+    compile 'com.google.api-client:google-api-client-android:1.19.0' exclude module: 'httpclient'
+    compile 'com.google.http-client:google-http-client-gson:1.19.0' exclude module: 'httpclient'
+    //compile 'com.google.android.google-play-services:google-play-services:1'
+    compile 'com.google.android.gms:play-services:4.1.32'
+    compile 'com.github.eluleci:flatui:0.1.2'
 }
