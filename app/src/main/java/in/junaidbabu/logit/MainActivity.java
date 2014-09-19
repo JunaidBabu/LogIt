@@ -18,6 +18,8 @@ public class MainActivity extends Activity {
     static MySQLiteHelper db;
     com.cengalabs.flatui.views.FlatEditText logbox;
     com.cengalabs.flatui.views.FlatButton button;
+    int flag=0;
+    String start, end, latlong="0,0";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,22 +40,30 @@ public class MainActivity extends Activity {
             public void afterTextChanged(Editable s) {
                 if (s == null || s.length() == 0) {
                     button.setEnabled(false);
+                    flag=0;
                 }
                 else {
+                    if(flag==0){
+                        start = new Date().toString();
+                    }
+                    flag=1;
                     button.setEnabled(true);
                     button.setText("Log this");
                 }
             }
         });
 
+
+
     }
     public void Logthis(View v){
-
+        end = new Date().toString();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss");
         String Text = logbox.getText().toString();
         String Type = "Log";
         String Time = sdf.format(new Date());
-        db.addEntry(new dataClass(Type, Time, Text));
+
+        db.addEntry(new dataClass(start, end, Type, latlong, Text, Time));
         Toast.makeText(this, Type+" "+Time+" "+Text, Toast.LENGTH_SHORT).show();
         logbox.setText("");
         button.setText("Logged!");

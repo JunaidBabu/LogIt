@@ -20,7 +20,15 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     private static final String KEY_ID = "id";
     private static final String KEY_TYPE = "type";
     private static final String KEY_TIME = "timestamp";
+
     private static final String KEY_TEXT = "text";
+
+    private static final String KEY_START = "start";
+    private static final String KEY_END = "end";
+    private static final String KEY_LATLNG = "latlng";
+    private static final String KEY_ISSYNC = "issync";
+    private static final String KEY_ENTRY_ID = "entryid";
+
     public MySQLiteHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -31,6 +39,11 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
                 KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 KEY_TYPE + " TEXT, "+
                 KEY_TIME + " TEXT, "+
+                KEY_START + " TEXT, "+
+                KEY_END + " TEXT, "+
+                KEY_LATLNG + " TEXT, "+
+                KEY_ISSYNC + " TEXT, "+
+                KEY_ENTRY_ID + " TEXT, "+
                 KEY_TEXT + " TEXT )";
         db.execSQL(CREATE_TABLE);
     }
@@ -52,8 +65,12 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(KEY_TYPE, log.getType());
         values.put(KEY_TIME, log.getTimestamp());
+        values.put(KEY_START, log.getStart());
+        values.put(KEY_END, log.getEnd());
+        values.put(KEY_LATLNG, log.getLatlong());
+        values.put(KEY_ISSYNC, log.getIssync());
+        values.put(KEY_ENTRY_ID, log.getEntryid());
         values.put(KEY_TEXT, log.getText());
-
         // 3. insert
         db.insert(TABLE_NAME, // table
                 null, //nullColumnHack

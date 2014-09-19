@@ -69,6 +69,7 @@ class AsyncUpdateCalendar extends CalendarAsyncTask {
     private static Event newEvent(String summary) {
         Event event = new Event();
         event.setSummary(summary);
+
         Date startDate = new Date();
         Date endDate = new Date(startDate.getTime() + 5*60*1000);
         DateTime start = new DateTime(startDate, TimeZone.getTimeZone("UTC"));
