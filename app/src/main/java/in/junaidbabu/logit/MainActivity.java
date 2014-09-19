@@ -1,6 +1,7 @@
 package in.junaidbabu.logit;
 
 import android.app.Activity;
+import android.location.Location;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -12,6 +13,8 @@ import com.cengalabs.flatui.FlatUI;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import in.junaidbabu.logit.misc.MyLocation;
 
 
 public class MainActivity extends Activity {
@@ -55,7 +58,16 @@ public class MainActivity extends Activity {
 
 
 
+        new MyLocation().getLocation(this, new MyLocation.LocationResult(){
+            @Override
+            public void gotLocation (Location location) {
+                latlong = location.getLatitude()+","+location.getLongitude();
+            }
+        });
     }
+
+
+
     public void Logthis(View v){
         end = new Date().toString();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss");
