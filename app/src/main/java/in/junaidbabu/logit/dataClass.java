@@ -14,6 +14,7 @@ public class dataClass {
     String type;
     String latlong;
     String datatext;
+    String extratext="";
     String timestamp;
     String entryid;
     int issync = 0;
@@ -25,16 +26,38 @@ public class dataClass {
         this.datatext = text;
     }
 
-    public dataClass(String Start, String End, String Type, String Latlng, String Datatext, String time){
+    public dataClass(String Start, String End, String Type, String Latlng, String Datatext, String extra, String time){
         super();
         this.start = Start;
         this.end = End;
         this.type = Type;
         this.latlong = Latlng;
         this.datatext = Datatext;
+        this.extratext = extra;
         this.timestamp = time;
     }
 
+    public dataClass(int i, String Start, String End, String Type, String Latlng, String Datatext, String extra, String time, String enid, int iss){
+        super();
+        this.id = i;
+        this.start = Start;
+        this.end = End;
+        this.type = Type;
+        this.latlong = Latlng;
+        this.datatext = Datatext;
+        this.extratext = extra;
+        this.timestamp = time;
+        this.entryid = enid;
+        this.issync = iss;
+    }
+
+    public dataClass() {
+
+    }
+
+    String getEverything(){
+        return id+start+end+type+latlong+datatext+extratext+timestamp;
+    }
     int getId() {
         return this.id;
     }

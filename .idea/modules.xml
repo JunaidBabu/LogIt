@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/LogIt.iml" filepath="$PROJECT_DIR$/LogIt.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/voidnamespace.iml" filepath="$PROJECT_DIR$/voidnamespace.iml" />
     </modules>

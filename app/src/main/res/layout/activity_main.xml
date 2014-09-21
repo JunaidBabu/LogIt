@@ -13,13 +13,12 @@
     <com.cengalabs.flatui.views.FlatEditText
         android:id="@+id/logbox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         flatui:theme="Grass"
         flatui:fieldStyle="box"
         flatui:cornerRadius="3dip"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_below="@+id/button" />
+        android:layout_below="@+id/debuglogs"
+        android:layout_centerHorizontal="true" />
 
     <com.cengalabs.flatui.views.FlatButton
         android:id="@+id/button"
@@ -30,14 +29,32 @@
         flatui:theme="Grass"
         flatui:textAppearance="none"
         android:enabled="false"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/logbox"
-        android:layout_alignStart="@+id/logbox"
-        android:layout_alignRight="@+id/logbox"
-        android:layout_alignEnd="@+id/logbox"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="5dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/logbox" />
 
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/debuglogs"
+        android:text="debug logs"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/title_refresh_progress"
+        style="@style/TitleBarProgressIndicator"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Sync"
+        android:onClick="SyncTest"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/logbox"
+        android:layout_alignStart="@+id/logbox" />
 </RelativeLayout>
 
 </ScrollView>

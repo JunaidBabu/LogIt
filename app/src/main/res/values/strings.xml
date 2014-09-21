@@ -16,7 +16,7 @@
 -->
 <resources>
 
-    <string name="app_name">Google Calendar Sample</string>
+    <string name="app_name">Then I Told Myself...</string>
     <string name="accounts">Accounts</string>
     <string name="description_add">Add Calendar</string>
     <string name="summary">Title</string>

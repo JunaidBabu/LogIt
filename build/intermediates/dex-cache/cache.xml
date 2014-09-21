@@ -2,100 +2,100 @@
 <pre-dex-items>
 
     <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-oauth-client-1.19.0-7142437bd0d79577dc5cd0e936444c7018920fba.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.19.0/d473a8962e14a707a3716637e4898bb2dd9643f2/google-oauth-client-1.19.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="d473a8962e14a707a3716637e4898bb2dd9643f2"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-api-services-calendar-v3-rev87-1.19.0-19520c54a3dcb4395ec7445e76fc956497abe4cd.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-calendar/v3-rev87-1.19.0/3343601b194726347ff30ad596880fc321654538/google-api-services-calendar-v3-rev87-1.19.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="3343601b194726347ff30ad596880fc321654538"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-http-client-android-1.19.0-16fd387da231f3a96d47ff1d1eac869911f716e2.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-android/1.19.0/e3f11020c2c812112803d252d1392872d3f619c8/google-http-client-android-1.19.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="e3f11020c2c812112803d252d1392872d3f619c8"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/classes-64b7e1833ea69058d61d5a8a9905ef57cd71f1d5.jar"
-        jar="/home/neo/Git/voidnamespace/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.1.32/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="826507592fec9d8e26db18364e709df133c749ce"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/classes-bff8791cf3790333a95b27b23976429692b04adb.jar"
-        jar="/home/neo/Git/voidnamespace/app/build/intermediates/exploded-aar/com.github.eluleci/flatui/0.1.2/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="36720823386f37037fe534f56b6f96821c3d6d40"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/guava-jdk5-13.0-c434121af968ca181dd6c720343ad80f4f0b5818.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-jdk5/13.0/381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7/guava-jdk5-13.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-http-client-1.19.0-e7f0ec7d1e0908dabd2f7cd3201f7ecdc5b32ec0.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.19.0/cdca49ad0977c040f603478aa2e16b2775c8fec6/google-http-client-1.19.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="cdca49ad0977c040f603478aa2e16b2775c8fec6"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/classes-92c84734b6d31d507c9e1fbd3efc06c47d64681e.jar"
-        jar="/home/neo/Git/voidnamespace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-api-client-android-1.19.0-3b0db641bf264d2890220b1c7626d2db00d48b9c.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client-android/1.19.0/ba2aafb867f6af469f936ae76426cf0a280094bd/google-api-client-android-1.19.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="ba2aafb867f6af469f936ae76426cf0a280094bd"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/jackson-core-2.1.3-2ba5ae59c08b34b98361bc9b16d4b15360615fc2.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.3/f6c3aed1cdfa21b5c1737c915186ea93a95a58bd/jackson-core-2.1.3.jar"
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/jackson-core-2.1.3-7024eaec82be0aa1209562ca3b5c1ef1ce7f9fb2.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.3/f6c3aed1cdfa21b5c1737c915186ea93a95a58bd/jackson-core-2.1.3.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd"/>
     <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/jsr305-1.3.9-d11b6b763ab4e5d5a3d073c33862086c7c969a18.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-http-client-android-1.19.0-a46cc02e513c9685efa637a1727be7c486f44148.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-android/1.19.0/e3f11020c2c812112803d252d1392872d3f619c8/google-http-client-android-1.19.0.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf"/>
+        sha1="e3f11020c2c812112803d252d1392872d3f619c8"/>
     <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-http-client-jackson2-1.19.0-342d7c28e23b84defda0507fbb1848363e051b5e.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson2/1.19.0/81dbf9795d387d5e80e55346582d5f2fb81a42eb/google-http-client-jackson2-1.19.0.jar"
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/guava-jdk5-13.0-13def0145cad23cd941791ead7d65191758b41c4.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-jdk5/13.0/381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7/guava-jdk5-13.0.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="81dbf9795d387d5e80e55346582d5f2fb81a42eb"/>
+        sha1="381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7"/>
     <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-http-client-gson-1.19.0-c94b4e6748a66c05511beef7a5b312079fe48fd5.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-gson/1.19.0/b3cdefb990d5212bb2a130525b20e2c44aeffc4c/google-http-client-gson-1.19.0.jar"
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-api-client-android-1.19.0-06c31401cf0396c8bbf16faca8225b602b84c2a8.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client-android/1.19.0/ba2aafb867f6af469f936ae76426cf0a280094bd/google-api-client-android-1.19.0.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="b3cdefb990d5212bb2a130525b20e2c44aeffc4c"/>
+        sha1="ba2aafb867f6af469f936ae76426cf0a280094bd"/>
     <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-4f7b8a6972decd579676df0a0feb5db29d196599.jar"
-        jar="/home/neo/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
-    <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/google-api-client-1.19.0-d1fd77770d50cd0f29010bcedafc8c443d8d8de1.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/1.19.0/6a21277d9bebe267b7ddee028b241eebc756c040/google-api-client-1.19.0.jar"
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-api-client-1.19.0-c98f8b8b8234df552b93ec11bd670dfa704ab269.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/1.19.0/6a21277d9bebe267b7ddee028b241eebc756c040/google-api-client-1.19.0.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="6a21277d9bebe267b7ddee028b241eebc756c040"/>
     <item
-        dex="/home/neo/Git/voidnamespace/app/build/intermediates/pre-dexed/debug/gson-2.1-2399d6a73d09d635e26a5462bbddd5f12cefe455.jar"
-        jar="/home/neo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.1/2e66da15851f9f5b5079228f856c2f090ba98c38/gson-2.1.jar"
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-http-client-jackson2-1.19.0-8b9fd55c6e3815a0ab33e8807981323bb64eee1c.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson2/1.19.0/81dbf9795d387d5e80e55346582d5f2fb81a42eb/google-http-client-jackson2-1.19.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="81dbf9795d387d5e80e55346582d5f2fb81a42eb"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-c4f9c02377059ea4e6f75805fa9738fddba7e007.jar"
+        jar="/home/jun/Apps/android-sdk-linux/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-http-client-gson-1.19.0-556c612120464c0daa5cb595f3a97ad0740944fa.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-gson/1.19.0/b3cdefb990d5212bb2a130525b20e2c44aeffc4c/google-http-client-gson-1.19.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="b3cdefb990d5212bb2a130525b20e2c44aeffc4c"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/gson-2.1-5cca17006f4183dc9a10529cc13fdb8b67ea3335.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.1/2e66da15851f9f5b5079228f856c2f090ba98c38/gson-2.1.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="2e66da15851f9f5b5079228f856c2f090ba98c38"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/classes-25062218b15c6f88a295b258980299bf559c2a11.jar"
+        jar="/home/jun/Studio Projects/LogIt/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.1.32/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="826507592fec9d8e26db18364e709df133c749ce"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-api-services-calendar-v3-rev87-1.19.0-8a0fc4cae84184725781e160615b295466bde633.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-calendar/v3-rev87-1.19.0/3343601b194726347ff30ad596880fc321654538/google-api-services-calendar-v3-rev87-1.19.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3343601b194726347ff30ad596880fc321654538"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/jsr305-1.3.9-e512228fbd2b5617aa50f8375b42211b57623223.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/classes-405c00a22862e9763f22d717be2396d3a0b48577.jar"
+        jar="/home/jun/Studio Projects/LogIt/app/build/intermediates/exploded-aar/com.github.eluleci/flatui/0.1.2/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="36720823386f37037fe534f56b6f96821c3d6d40"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/classes-539703ec762952e834fa976658c52717adbc36e6.jar"
+        jar="/home/jun/Studio Projects/LogIt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-http-client-1.19.0-43e6b4ddc2828a54ced7c92a173e0edadd345261.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.19.0/cdca49ad0977c040f603478aa2e16b2775c8fec6/google-http-client-1.19.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="cdca49ad0977c040f603478aa2e16b2775c8fec6"/>
+    <item
+        dex="/home/jun/Studio Projects/LogIt/app/build/intermediates/pre-dexed/debug/google-oauth-client-1.19.0-5208a118ea5f1b9ec741e030b5e4c760a874ea90.jar"
+        jar="/home/jun/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.19.0/d473a8962e14a707a3716637e4898bb2dd9643f2/google-oauth-client-1.19.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d473a8962e14a707a3716637e4898bb2dd9643f2"/>
 
 </pre-dex-items>
