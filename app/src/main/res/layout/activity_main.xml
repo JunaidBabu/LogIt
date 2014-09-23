@@ -13,6 +13,7 @@
     <com.cengalabs.flatui.views.FlatEditText
         android:id="@+id/logbox"
         android:layout_width="match_parent"
+        android:layout_margin="10dp"
         android:layout_height="250dp"
         flatui:theme="Grass"
         flatui:fieldStyle="box"
@@ -24,12 +25,11 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:onClick="Logthis"
-        android:text="Log this"
+        android:text="The Green Button"
         flatui:theme="Grass"
-        flatui:textAppearance="none"
         android:enabled="false"
-        android:layout_alignParentBottom="true"
         android:layout_alignBottom="@+id/button2"
         android:layout_alignRight="@+id/logbox" />
 
@@ -37,24 +37,22 @@
         android:layout_height="wrap_content"
         android:id="@+id/debuglogs"
         android:text="debug logs"
-        android:layout_width="match_parent"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="match_parent" />
 
     <ProgressBar
         android:id="@+id/title_refresh_progress"
         style="@style/TitleBarProgressIndicator"
-        android:visibility="gone"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true" />
-    <Button
+    <com.cengalabs.flatui.views.FlatButton
         android:layout_width="wrap_content"
         android:text="Sync"
         android:onClick="SyncTest"
+        android:layout_margin="5dp"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/logbox"
-        android:layout_alignStart="@+id/logbox" />
+        android:layout_alignBottom="@+id/logbox"
+        android:layout_alignLeft="@+id/logbox"/>
 </RelativeLayout>
 
 </ScrollView>
