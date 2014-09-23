@@ -88,6 +88,29 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    public int updateEntry(dataClass entry) {
+
+        // 1. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // 2. create ContentValues to add key "column"/value
+        ContentValues values = new ContentValues();
+        values.put(KEY_ISSYNC, entry.getIssync() ); // get title
+
+        // 3. updating row
+        int i = db.update(TABLE_NAME, //table
+                values, // column/value
+                KEY_ID+" = ?", // selections
+                new String[] { String.valueOf(entry.getId()) }); //selection args
+
+        // 4. close
+        db.close();
+
+        Log.w("UpdateENtry", "Success");
+        return i;
+
+    }
+
     public List<dataClass> getAllEntries() {
         List<dataClass> entries = new LinkedList<dataClass>();
 
