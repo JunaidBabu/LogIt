@@ -39,9 +39,16 @@
         <activity android:name="com.betaturtle.calendar.AddOrEditCalendarActivity" >
         </activity>
 
+        <service android:name="in.junaidbabu.logit.misc.NLService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
     </application>
-
 </manifest>
