@@ -2,8 +2,10 @@ package in.junaidbabu.logit;
 
 import android.accounts.AccountManager;
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
@@ -69,6 +71,7 @@ public class MainActivity extends Activity {
     final JsonFactory jsonFactory = GsonFactory.getDefaultInstance();
 
     SharedPreferences settings;
+    private NotificationReceiver nReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +98,11 @@ public class MainActivity extends Activity {
         try {
             //logbox.setText(db.getAllEntries().get(0).getEverything());
         }catch (Exception e){}
+
+        nReceiver = new NotificationReceiver();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("com.kpbird.nlsexample.NOTIFICATION_LISTENER_EXAMPLE");
+        registerReceiver(nReceiver,filter);
 
         logbox.addTextChangedListener(new TextWatcher() {
             @Override
@@ -144,7 +152,7 @@ public class MainActivity extends Activity {
         String Type = "Log";
         String Time = sdf.format(new Date());
 
-        db.addEntry(new dataClass(start, end, Type, latlong, Text, "", Time));
+        db.addEntry(new dataClass(start, end, Type, latlong, Text, Text, Time));
         Toast.makeText(this, Type+" "+Time+" "+Text, Toast.LENGTH_SHORT).show();
         logbox.setText("");
         button.setText("Logged!");
@@ -172,6 +180,12 @@ public class MainActivity extends Activity {
                 break;
 
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(nReceiver);
     }
 
     @Override
@@ -212,4 +226,14 @@ public class MainActivity extends Activity {
     }
 
 
+    class NotificationReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Log.e("onRecieve in MainActivity", "Yo, we recieved something here");
+            Toast.makeText(context, "Here is a toast", Toast.LENGTH_SHORT).show();
+           // String temp = intent.getStringExtra("notification_event") + "\n" + txtView.getText();
+           // txtView.setText(temp);
+        }
+    }
 }
