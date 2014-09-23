@@ -79,6 +79,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         values.put(KEY_ISSYNC, log.getIssync());
         values.put(KEY_ENTRY_ID, log.getEntryid());
         values.put(KEY_TEXT, log.getText());
+        values.put(KEY_TEXTEXTRA, log.getTextExtra());
         // 3. insert
         db.insert(TABLE_NAME, // table
                 null, //nullColumnHack
