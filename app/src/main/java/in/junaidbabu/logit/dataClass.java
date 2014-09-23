@@ -58,34 +58,37 @@ public class dataClass {
     String getEverything(){
         return id+start+end+type+latlong+datatext+extratext+timestamp;
     }
-    int getId() {
+    public void setIsSync(int a){
+        this.issync = a;
+    }
+    public int getId() {
         return this.id;
     }
-    String getType(){
+    public String getType(){
         return this.type;
     }
-    String getTimestamp(){
+    public String getTimestamp(){
         return this.timestamp;
     }
-    String getText(){
+    public String getText(){
         return this.datatext;
     }
-    String getStart(){
+    public String getStart(){
         return this.start;
     }
-    String getEnd(){
+    public String getEnd(){
         return this.end;
     }
-    String getLatlong(){
+    public String getLatlong(){
         return this.latlong;
     }
-    String getDatatext(){
+    public String getDatatext(){
         return this.datatext;
     }
-    int getIssync(){
+    public int getIssync(){
         return this.issync;
     }
-    String getEntryid(){
+    public String getEntryid(){
         return this.entryid;
     }
 }
