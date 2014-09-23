@@ -59,20 +59,21 @@ public class AsyncInsertEvent extends CalendarAsyncTask {
         JSONObject desObj = new JSONObject();
         try {
             desObj.put("type", a.getType());
-            desObj.put("data", a.getText());
+            desObj.put("data", a.getTextExtra());
             event.setDescription(desObj.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-        event.setSummary(a.getDatatext());
-        event.setLocation(a.getLatlong());
-
         Date startDate = new Date(a.getStart());
         Date endDate = new Date(a.getEnd());
         DateTime start = new DateTime(startDate, TimeZone.getTimeZone("UTC"));
-        event.setStart(new EventDateTime().setDateTime(start));
         DateTime end = new DateTime(endDate, TimeZone.getTimeZone("UTC"));
+
+
+        event.setSummary(a.getText());
+
+        event.setLocation(a.getLatlong());
+        event.setStart(new EventDateTime().setDateTime(start));
         event.setEnd(new EventDateTime().setDateTime(end));
         return event;
     }
