@@ -25,11 +25,16 @@ import com.google.api.services.calendar.model.Calendar;
 import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.EventDateTime;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 import java.util.TimeZone;
 
 import in.junaidbabu.logit.MainActivity;
+import in.junaidbabu.logit.dataClass;
 
 
 /**
@@ -40,12 +45,36 @@ import in.junaidbabu.logit.MainActivity;
 public class AsyncInsertEvent extends CalendarAsyncTask {
 
     private final String calendarId;
-    private final Event entry;
+    //private final Event entry;
+    List<dataClass> entries;
 
-    public AsyncInsertEvent(MainActivity calendarSample, String calendarId, Event entry) {
+    public AsyncInsertEvent(MainActivity calendarSample, String calendarId, List<dataClass> entry) {
         super(calendarSample);
         this.calendarId = calendarId;
-        this.entry = entry;
+        this.entries = entry;
+    }
+
+    private static Event newEvent(dataClass a) {
+        Event event = new Event();
+        JSONObject desObj = new JSONObject();
+        try {
+            desObj.put("type", a.getType());
+            desObj.put("data", a.getText());
+            event.setDescription(desObj.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        event.setSummary(a.getDatatext());
+        event.setLocation(a.getLatlong());
+
+        Date startDate = new Date(a.getStart());
+        Date endDate = new Date(a.getEnd());
+        DateTime start = new DateTime(startDate, TimeZone.getTimeZone("UTC"));
+        event.setStart(new EventDateTime().setDateTime(start));
+        DateTime end = new DateTime(endDate, TimeZone.getTimeZone("UTC"));
+        event.setEnd(new EventDateTime().setDateTime(end));
+        return event;
     }
 
     @Override
@@ -56,10 +85,21 @@ public class AsyncInsertEvent extends CalendarAsyncTask {
 //            Log.w("Calendar ID", calendarId);
 //
 //            EventCreate(calendarId, entry.getSummary());
-            Event result = client.events().insert(calendarId, entry).execute();
-            Log.w("Result", result.toString());
-        } catch (GoogleJsonResponseException e) {
+            Event entry;
+            for(int i=0; i<entries.size(); i++){
+                if(entries.get(i).getIssync()==1)
+                    continue;
+                entry = newEvent(entries.get(i));
+                Event result = client.events().insert(calendarId, entry).execute();
+                Log.w("Result", result.toString());
+                entries.get(i).setIsSync(1);
+                MainActivity.db.updateEntry(entries.get(i));
+            }
 
+
+
+        } catch (GoogleJsonResponseException e) {
+            e.printStackTrace();
         }
     }
 

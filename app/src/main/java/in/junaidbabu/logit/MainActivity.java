@@ -47,7 +47,7 @@ import in.junaidbabu.logit.misc.MyLocation;
 
 
 public class MainActivity extends Activity {
-    static MySQLiteHelper db;
+    public static MySQLiteHelper db;
     TextView debuglog;
     com.cengalabs.flatui.views.FlatEditText logbox;
     com.cengalabs.flatui.views.FlatButton button;
@@ -93,7 +93,7 @@ public class MainActivity extends Activity {
         logbox = (com.cengalabs.flatui.views.FlatEditText)findViewById(R.id.logbox);
         button = (com.cengalabs.flatui.views.FlatButton)findViewById(R.id.button);
         try {
-            logbox.setText(db.getAllEntries().get(0).getEverything());
+            //logbox.setText(db.getAllEntries().get(0).getEverything());
         }catch (Exception e){}
 
         logbox.addTextChangedListener(new TextWatcher() {
@@ -131,24 +131,11 @@ public class MainActivity extends Activity {
 
     }
 
-    private static Event newEvent() {
-        Event event = new Event();
-        event.setDescription(db.getAllEntries().get(0).getDatatext());
-        event.setSummary(db.getAllEntries().get(0).getDatatext());
-        event.setLocation(db.getAllEntries().get(0).getLatlong());
 
-        Date startDate = new Date(db.getAllEntries().get(0).getStart());
-        Date endDate = new Date(db.getAllEntries().get(0).getEnd());
-        DateTime start = new DateTime(startDate, TimeZone.getTimeZone("UTC"));
-        event.setStart(new EventDateTime().setDateTime(start));
-        DateTime end = new DateTime(endDate, TimeZone.getTimeZone("UTC"));
-        event.setEnd(new EventDateTime().setDateTime(end));
-        return event;
-    }
     public void SyncTest(View v){
         Toast.makeText(this, "Syncing", Toast.LENGTH_SHORT).show();
-        Event event = newEvent();
-        new AsyncInsertEvent(this, settings.getString(PREF_CAL_ID, null), event).execute();
+        //Event event = newEvent();
+        new AsyncInsertEvent(this, settings.getString(PREF_CAL_ID, null), db.getAllEntries()).execute();
     }
     public void Logthis(View v){
         end = new Date().toString();
@@ -208,16 +195,16 @@ public class MainActivity extends Activity {
     }
 
     public void refreshView() {
-        String callist = null;
-        for(int i=0; i<model.toSortedArray().length; i++){
-            callist+=" " + model.toSortedArray()[i].summary;
-        }
-        debuglog.setText(debuglog.getText()+"\n"+callist);
-
-        SharedPreferences settings = getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putString(PREF_CAL_ID, model.toSortedArray()[3].id);
-        editor.commit();
+//        String callist = null;
+//        for(int i=0; i<model.toSortedArray().length; i++){
+//            callist+=" " + model.toSortedArray()[i].summary;
+//        }
+//        debuglog.setText(debuglog.getText()+"\n"+callist);
+//
+//        SharedPreferences settings = getPreferences(Context.MODE_PRIVATE);
+//        SharedPreferences.Editor editor = settings.edit();
+//        editor.putString(PREF_CAL_ID, model.toSortedArray()[3].id);
+//        editor.commit();
     }
 
     private void chooseAccount() {
