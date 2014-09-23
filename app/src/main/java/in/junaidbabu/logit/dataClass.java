@@ -82,13 +82,14 @@ public class dataClass {
     public String getLatlong(){
         return this.latlong;
     }
-    public String getDatatext(){
-        return this.datatext;
-    }
     public int getIssync(){
         return this.issync;
     }
     public String getEntryid(){
         return this.entryid;
+    }
+
+    public String getTextExtra() {
+        return this.extratext;
     }
 }
